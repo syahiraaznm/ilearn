@@ -4,11 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
-import Dashboard from './containers/home/dashboard';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Header from './components/header/header';
+import Footer from './components/footer/footer';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Dashboard />
+    <BrowserRouter>
+      <Header/>
+      <App />
+      <Footer/>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
