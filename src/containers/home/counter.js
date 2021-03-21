@@ -28,7 +28,7 @@ class Counter extends Component {
     };
     render() { 
         return ( 
-            <div>
+            <div style ={{height: "100vh", display:"flex", justifyContent: "center", margin: "auto", alignItems: "center"}}>
                 {/* <button onClick= {this.handleReset} className="btn btn-primary btn-sm m-2">reset</button>
                 {this.state.counters.map(counter => 
                     <Home
@@ -39,7 +39,7 @@ class Counter extends Component {
                     />
                 )} */}
                 
-                counterrrrrrrrr
+                <span>home</span>
             </div>
          );
     }

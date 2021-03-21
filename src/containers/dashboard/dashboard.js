@@ -4,7 +4,7 @@ class Dashboard extends Component {
 
     render() { 
         return ( 
-            <div>
+            <div style ={{height: "100vh", display:"flex", justifyContent: "center", margin: "auto", alignItems: "center"}}>
                 Welcome to i-Learn Application!
                 <span>created by alyssaznm</span>
                 <button 
