@@ -1,32 +1,40 @@
-import React, { Component } from 'react';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
+import React, { useState }  from 'react';
+import { useHistory } from "react-router-dom";
 
-class Login extends Component {
-    state = {  }
-    render() { 
-        return ( 
-            <div style ={{height: "100vh", display:"flex", justifyContent: "center", margin: "auto", alignItems: "center"}}>Loginnnnnnnnnnnn
-                <Form>
-                    <Form.Group controlId="formBasicEmail">
-                        <Form.Label>Email address</Form.Label>
-                        <Form.Control type="email" placeholder="Enter email" />
-                    </Form.Group>
+export default function Login() {
+    let history = useHistory();
+    const [userInput, setUserInput] = useState(0);
 
-                    <Form.Group controlId="formBasicPassword">
-                        <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" />
-                    </Form.Group>
-                    <Form.Group controlId="formBasicCheckbox">
-                        <Form.Check type="checkbox" label="Check me out" />
-                    </Form.Group>
-                    <Button variant="primary" type="submit" onClick={()=> this.props.history.push("/home")}>
-                        Submit
-                    </Button>
-                </Form>
-            </div>
-         );
+    const handleSignin = (e) => {
+        e.preventDefault();
+        history.push("/home");
     }
+    return ( 
+        <div style ={{height: "100vh", display:"flex", justifyContent: "center", margin: "auto", alignItems: "center"}}>Loginnnnnnnnnnnn
+        <form onSubmit={handleSignin}>
+          <div>Email</div>
+          <input
+            name="email"
+            type="email"
+            value={userInput.email}
+            // onChange={handleInputChange}
+            required
+            autoFocus
+          ></input>
+          <div>Password</div>
+          <input
+            name="password"
+            type="password"
+            value={userInput.password}
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[!@#\$%\^&\*]).{8,}" 
+            title="Must contain at least one number, special character and lowercase letter, and at least 8 or more characters"
+            required
+            // onChange={handleInputChange}
+          ></input>
+          <button type="submit">
+            <div>Login</div>
+          </button>
+        </form>
+        </div>
+    );
 }
- 
-export default Login;

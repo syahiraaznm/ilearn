@@ -1,20 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
 
+export default function Home() {
 
-class  Home extends Component {
-
-    formatCount() {
-        const { value } = this.props.counter;
-        return value === 0 ? 
-        'Zero' 
-        : 
-        value;
-    }
-    getBadgeClasses() {
-        let classes = "badge m-2 badge-";
-        classes += (this.props.counter.value === 0) ? "warning" : "primary";
-        return classes;
-    }
+    // formatCount() {
+    //     const { value } = this.props.counter;
+    //     return value === 0 ? 
+    //     'Zero' 
+    //     : 
+    //     value;
+    // }
+    // getBadgeClasses() {
+    //     let classes = "badge m-2 badge-";
+    //     classes += (this.props.counter.value === 0) ? "warning" : "primary";
+    //     return classes;
+    // }
     // renderTags() {
     //     if (this.state.tags.length === 0) 
     //         return <p>Nothing here</p>;
@@ -22,9 +21,6 @@ class  Home extends Component {
          
     //     return <ul>{this.state.tags.map ((tag, index) => <li key= {index}>{tag}</li>)}</ul>;
     // }
-
-
-    render() { 
         return ( 
             <div style ={{height: "100vh", display:"flex", justifyContent: "center", margin: "auto"}}>
                 {/* <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
@@ -33,7 +29,4 @@ class  Home extends Component {
                 <span>welcome homeeeeeeee</span>
             </div>
         );
-    }
 }
- 
-export default Home;
