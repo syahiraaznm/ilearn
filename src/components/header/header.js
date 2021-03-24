@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
+import { useHistory } from "react-router-dom";
 
-class Header extends Component {
-    state = {  }
-    render() { 
-        return ( 
-            <div style={{backgroundColor: "pink", display: "flex"}}>
-                <h4>Headerrrrrrrrrrrrrrrrrr</h4>
-            </div>
-         );
-    }
+export default function Header() {
+    let history = useHistory();
+    return ( 
+        <div style={{backgroundColor: "pink", display: "flex", justifyContent: "space-between"}}>
+            <h4>Header</h4>
+            <a href="#" onClick={()=> history.push("/")}>Home</a>
+        </div>
+        );
 }
- 
-export default Header;
