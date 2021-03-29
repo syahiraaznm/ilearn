@@ -3,6 +3,7 @@ import React, {useState, useEffect} from 'react';
 // export default useForm;
 const useForm = (callback, validate) => {
     const [userInput, setUserInput] = useState({
+        username: '',
         email: '',
         password: '',
     })
@@ -17,7 +18,7 @@ const useForm = (callback, validate) => {
         })
     }
 
-    const handleLogIn = e => {
+    const handleRegister = e => {
         e.preventDefault();
         setErrors(validate(userInput));
         setIsSubmitting(true);
@@ -32,6 +33,6 @@ const useForm = (callback, validate) => {
         [errors]
     );
 
-    return { handleInputChange, userInput, handleLogIn, errors };
+    return { handleInputChange, userInput, handleRegister, errors };
 }
 export default useForm;

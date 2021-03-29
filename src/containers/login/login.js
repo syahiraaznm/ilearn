@@ -1,37 +1,10 @@
 import React, { useState }  from 'react';
-import { useHistory } from "react-router-dom";
 import "./login.scss";
 import useForm from "./useForm";
 import validate from "./validate";
 
 // export default function Login() {
     const Login = ({submitForm}) => {
-    let history = useHistory();
-    // const [userInput, setUserInput] = useState(0);
-
-    // const handleSignIn = (e) => {
-    //     e.preventDefault();
-    //     if ((userInput.email || userInput.password === "")) {
-    //         return(
-    //             console.log("incorrect input")
-    //             )
-    //         }
-    //         history.push("/home");
-    // };
-
-    // const handleInputChange = (event) => {
-    //     const name= event.target.name;
-    //     if (event.target.type === "checkbox") {
-    //         setUserInput({
-    //             [name]: event.target.checked,
-    //         });
-    //     } else {
-    //         setUserInput({
-    //             [name]: event.target.value,
-    //         })
-    //     }
-    // };
-    // const {inputs, handleInputChange, handleSubmit ,errors} = useForm({email:'',password:''},validate);
     const {handleInputChange, userInput, handleLogIn, errors} = useForm(submitForm, validate);
     return ( 
         <div className="loginnn" style ={{height: "100vh", display:"flex", flexDirection: "column", justifyContent: "center", margin: "auto", alignItems: "center"}}>

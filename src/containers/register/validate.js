@@ -1,7 +1,9 @@
-
 export default function validate(userInput) {
     let errors = {};
-
+    if (!userInput.username) {
+        errors.username= "Username required!"
+        console.log(errors.username)
+    }
     // EMAIL
     if (!userInput.email) {
         errors.email="Email required!"

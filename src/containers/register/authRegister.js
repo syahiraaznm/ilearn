@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import Login from "./login";
+import Register from "./register";
 import { useHistory } from "react-router-dom";
 
-const AuthLogin = () => {
+const AuthRegister = () => {
     let history = useHistory();
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -13,15 +13,15 @@ const AuthLogin = () => {
     <>
       <div className='form-container'>
         {!isSubmitted ? (
-          <Login submitForm={submitForm} />
+          <Register submitForm={submitForm} />
         ) : (
         //   <FormSuccess />
         // <div>Successssss</div>
-        history.push("/home")
+        history.push("/login")
         )}
       </div>
     </>
   );
 };
 
-export default AuthLogin;
+export default AuthRegister;
