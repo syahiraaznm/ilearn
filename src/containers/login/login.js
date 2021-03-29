@@ -4,7 +4,8 @@ import "./login.scss";
 import useForm from "./useForm";
 import validate from "./validate";
 
-export default function Login() {
+// export default function Login() {
+    const Login = ({submitForm}) => {
     let history = useHistory();
     // const [userInput, setUserInput] = useState(0);
 
@@ -30,38 +31,37 @@ export default function Login() {
     //         })
     //     }
     // };
-    const {inputs, handleInputChange, handleSubmit ,errors} = useForm({email:'',password:''},validate);
+    // const {inputs, handleInputChange, handleSubmit ,errors} = useForm({email:'',password:''},validate);
+    const {handleInputChange, userInput, handleLogIn, errors} = useForm(submitForm, validate);
     return ( 
         <div className="loginnn" style ={{height: "100vh", display:"flex", flexDirection: "column", justifyContent: "center", margin: "auto", alignItems: "center"}}>
             <div style= {{border: "1px solid pink", alignItems: "center", display:"flex", flexDirection: "column"}}>
                 <span>Login</span>
-                <form onSubmit={handleSubmit} style= {{display: "flex", flexDirection: "column"}}>
+                <form onSubmit={handleLogIn} style= {{display: "flex", flexDirection: "column"}} noValidate>
                     <div>Email</div>
                     <input
+                        id="email"
                         name="email"
                         type="email"
-                        value={inputs.email}
+                        value={userInput.email}
                         onChange={handleInputChange}
                         // required
                         // errorMessage={setUserInput.emailError}
                         autoFocus
                     ></input>
-                    <div style={{border: "1px solid red", color: "yellow", height: "20px"}}>
-                        {errors.email}
-                    </div>
+                    {errors.email && <p>{errors.email}</p>}
                     <div>Password</div>
                     <input
+                        id="password"
                         name="password"
                         type="password"
-                        value={inputs.password}
+                        value={userInput.password}
+                        onChange={handleInputChange}
                         // pattern="(?=.*\d)(?=.*[a-z])(?=.*[!@#\$%\^&\*]).{8,}" 
                         // title="Must contain at least one number, special character and lowercase letter, and at least 8 or more characters"
                         // required
-                        onChange={handleInputChange}
                     ></input>
-                    <div style={{border: "1px solid red", color: "yellow", height: "20px"}}>
-                        {errors.password}
-                    </div>
+                    {errors.password && <p>{errors.password}</p>}
                     <button type="submit" style= {{margin: "5px 0"}}>
                         <div>Login</div>
                     </button>
@@ -70,3 +70,5 @@ export default function Login() {
         </div>
     );
 }
+
+export default Login;

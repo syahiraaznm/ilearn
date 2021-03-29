@@ -1,6 +1,6 @@
 import {  Route, Switch } from 'react-router';
 import Home from "../containers/home/counter";
-import Login from "../containers/login/login";
+import Login from "../containers/login/authLogin";
 import Dashboard from "../containers/dashboard/dashboard";
 import Register from "../containers/register/register";
 
