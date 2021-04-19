@@ -21,8 +21,10 @@ import validate from "./validate";
                         // required
                         // errorMessage={setUserInput.emailError}
                         autoFocus
-                    ></input>
-                    {errors.email && <p>{errors.email}</p>}
+                    />
+                    <div style= {{color: "red"}}>
+                        {errors.email && <p>{errors.email}</p>}
+                    </div>
                     <div>Password</div>
                     <input
                         id="password"
@@ -33,8 +35,10 @@ import validate from "./validate";
                         // pattern="(?=.*\d)(?=.*[a-z])(?=.*[!@#\$%\^&\*]).{8,}" 
                         // title="Must contain at least one number, special character and lowercase letter, and at least 8 or more characters"
                         // required
-                    ></input>
-                    {errors.password && <p>{errors.password}</p>}
+                    />
+                    <div style= {{color: "red"}}>
+                        {errors.password && <p>{errors.password}</p>}
+                    </div>
                     <button type="submit" style= {{margin: "5px 0"}}>
                         <div>Login</div>
                     </button>

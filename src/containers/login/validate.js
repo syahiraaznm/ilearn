@@ -23,3 +23,6 @@ export default function validate(userInput) {
     }
     return errors;
 }
+
+//regex
+// laparlaparlapar

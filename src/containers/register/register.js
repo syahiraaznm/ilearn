@@ -20,7 +20,9 @@ import validate from "./validate";
                         // required
                         autoFocus
                     ></input>
-                    {errors.username && <p>{errors.username}</p>}
+                    <div style= {{color: "red"}}>
+                        {errors.username && <p>{errors.username}</p>}
+                    </div>
                     <div>Date of Birth</div>
                     <input
                         name="dob"
@@ -38,7 +40,9 @@ import validate from "./validate";
                         onChange={handleInputChange}
                         autoFocus
                     ></input>
-                    {errors.email && <p>{errors.email}</p>}
+                    <div style= {{color: "red"}}>
+                        {errors.email && <p>{errors.email}</p>}
+                    </div>
                     <div>Password</div>
                     <input
                         name="password"
@@ -49,7 +53,9 @@ import validate from "./validate";
                         // title="Must contain at least one number, special character and lowercase letter, and at least 8 or more characters"
                         // required
                     ></input>
-                    {errors.password && <p>{errors.password}</p>}
+                    <div style= {{color: "red"}}>
+                        {errors.password && <p>{errors.password}</p>}
+                    </div>
                     <button type="submit" style= {{margin: "5px 0"}}>
                         <div>Register</div>
                     </button>
