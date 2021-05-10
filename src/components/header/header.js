@@ -9,10 +9,15 @@ export default function Header() {
     const sideBar = () => {
         sideBarCollapse ? setSideBarCollapse(false) : setSideBarCollapse(true)
     }; 
+    const closeSideBar = () => {
+        if (sideBarCollapse === true) {
+            setSideBarCollapse(false)
+        }
+    };
     return ( 
         <div className="headerContainer">
             <div className="d-flex" style = {{width: "30%"}}>
-                <div className="home" onClick={()=> history.push("/home")}>
+                <div className="home" onClick={()=> history.push("/")}>
                     {/* Volcanic */}
                     <img src={Logo} alt="volcanic logo" width="150px"/>
                 </div>
@@ -48,6 +53,16 @@ export default function Header() {
                         <span className="sideText">Join Us</span>
                         <span className="sideText">Insights</span>
                         <span className="sideText">Contact Us</span>
+                        <span className="sideText" onClick={()=> {
+                            closeSideBar();
+                            history.push("/login");
+                        }}>
+                            Login
+                        </span>
+                        <span className="sideText" onClick={()=> {
+                            closeSideBar();
+                            history.push("/register");
+                        }}>Register</span>
                     </div>
                 </div>
             )}
