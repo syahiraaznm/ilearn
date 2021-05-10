@@ -1,0 +1,112 @@
+.headerContainer {
+    display: flex;
+    background-color: grey;
+    padding: 0 3%;
+    position: fixed;
+    width: -webkit-fill-available;
+}
+.home {
+    cursor:pointer;
+    background:  center center no-repeat;
+    background-size: contain;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+}
+.tabs {
+    display: none;
+    @media only screen and (min-width: 949px) {
+        display: flex;
+        align-items: center;
+        width: 70%;
+    }
+}
+.title {
+    width: 80%;
+    justify-content: space-around;
+}
+.pageTitle {
+    color: #FAFAFA;
+    padding: 5px 0;
+    margin: 0 3%;
+    cursor: pointer;
+}
+.pageTitle:hover {
+    color: orange;
+    border-top: 2px solid orange;
+}
+.auth {
+    width: 20%;
+    justify-content: space-around;
+}
+.authBtn {
+    background-color: #FAFAFA;
+    border-radius: 5px;
+    margin: 5px;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+.authBtn:hover {
+    background-color: orange;
+    color: #FAFAFA;
+}
+.sideBarMobile {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    width: 70%;
+    @media only screen and (min-width: 950px) {
+        display: none;
+    }
+}
+.sideBarBox {
+    // background-color: orange;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    // top: 3rem;
+    height: 100%;
+    // border: 1px solid orange;
+    width: 270px;
+    // transition: 2s;
+    @media only screen and (min-width: 950px) {
+        display: none;
+    }
+}
+.sideBarCollapsed {
+    padding: 20px 10px;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    background-color: orange;
+    @media only screen and (min-width: 950px) {
+        display: none;
+    }
+}
+.sideHeader {
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid pink;
+    justify-content: flex-end;
+    background-color: orange;
+}
+.sideText {
+    display: flex;
+    justify-content: flex-end;
+    color: #FAFAFA;
+    opacity: 40%;
+    cursor: pointer;
+    line-height: 3;
+    padding-right: 10px;
+}
+.sideText:hover {
+    display: flex;
+    justify-content: flex-end;
+    color: #FAFAFA;
+    opacity: 100%;
+    cursor: pointer;
+}
