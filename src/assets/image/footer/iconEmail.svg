@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="email-outline" transform="translate(12 12)">
+    <g id="email-outline-2" data-name="email-outline" transform="translate(-12 -12)">
+      <g id="email">
+        <rect id="Rectangle_328" data-name="Rectangle 328" width="24" height="24" opacity="0"/>
+        <path id="Path_8939" data-name="Path 8939" d="M19.2,4H5.036A3.036,3.036,0,0,0,2,7.036v10.12a3.036,3.036,0,0,0,3.036,3.036H19.2a3.036,3.036,0,0,0,3.036-3.036V7.036A3.036,3.036,0,0,0,19.2,4Zm-.678,2.024L12.12,10.831,5.714,6.024ZM19.2,18.168H5.036a1.012,1.012,0,0,1-1.012-1.012V7.289l7.489,5.616a1.012,1.012,0,0,0,1.214,0l7.489-5.616v9.867A1.012,1.012,0,0,1,19.2,18.168Z" transform="translate(0.024 0.048)"/>
+      </g>
+    </g>
+  </g>
+</svg>
