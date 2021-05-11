@@ -6,14 +6,14 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter } from 'react-router-dom';
 import Header from './components/header/header';
-import Footer from './components/footer/footer';
+// import Footer from './components/footer/footer';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Header/>
       <App />
-      <Footer/>
+      {/* <Footer/> */}
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

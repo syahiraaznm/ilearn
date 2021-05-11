@@ -1,0 +1,12 @@
+.jobContainer {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+}
+.jobTitle {
+    display: flex;
+    justify-content: center;
+}
+.jobList {
+    display: inline-flex;
+}

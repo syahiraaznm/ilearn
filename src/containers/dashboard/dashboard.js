@@ -1,24 +1,31 @@
-import React, { Component } from 'react';
-import { useHistory } from "react-router-dom";
+import React from 'react';
+// import { useHistory } from "react-router-dom";
+import './dashboard.scss';
+import Jobs from '../jobs/latestJobs';
+import Insight from '../insight/insight';
 
 export default function Dashboard() {
-    let history = useHistory();
+    // let history = useHistory();
     return ( 
-        <div style ={{height: "100vh", display:"flex", flexDirection: "column", justifyContent: "center", margin: "auto", alignItems: "center"}}>
-            <div style= {{border: "1px solid pink", alignItems: "center", display:"flex", flexDirection: "column"}}>
-                <span>Welcome to i-Learn Application!</span>
-                <span>created by alyssaznm</span>
-                <div>
-                    <button 
-                    onClick={()=> history.push("/login")}>
-                        Login
-                    </button>
-                    <button 
-                    onClick={()=> history.push("/register")}>
-                        Register
-                    </button>
+        <div>
+            <section> 
+                <h1 className="dashboardTitle">Aqccusantium doloremque</h1>
+                <h1 className="dashboardTitle">quae ab illo</h1>
+                <div className="searchJob">
+                    <input
+                        placeholder="keyword"
+                    />
+                    <input
+                        placeholder="location"
+                    />
+                    <div>Search Jobs</div>
                 </div>
-            </div>
+            </section>
+            <section>
+                <div>carousell</div>
+            </section>
+            <Jobs/>
+            <Insight/>
         </div>
     );
 }
