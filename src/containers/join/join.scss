@@ -1,0 +1,43 @@
+.joinContainer {
+    display: flex;
+    flex-direction: column;
+}
+.joinBox {
+    display: flex;
+    flex-direction: column;
+    @media only screen and (min-width: 900px) {
+        flex-direction: row;
+    }
+}
+.joinCol {
+    background-color: orange;
+    color: #FAFAFA;
+    padding: 15px 10px;
+    text-align: center;
+    @media only screen and (min-width: 900px) {
+        width: 50%;
+    }
+}
+.btnMore {
+    padding: 10px;
+    background-color: #FAFAFA;
+    color: black;
+    width: 120px;
+    border-radius: 10px;
+}
+.btnMore:hover {
+    box-shadow: 0 8px 6px -6px black;
+}
+.workPic {
+    // width: 100%;
+    height: 200px;
+    display: flex;
+    background-image: url("../../assets/image/insight/pic7.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    @media only screen and (min-width: 900px) {
+        width: 50%;  
+        height: unset;
+    }
+}

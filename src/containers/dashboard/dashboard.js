@@ -1,11 +1,10 @@
 import React from 'react';
-// import { useHistory } from "react-router-dom";
 import './dashboard.scss';
 import Jobs from '../jobs/latestJobs';
 import Insight from '../insight/insight';
+import Join from '../join/join';
 
 export default function Dashboard() {
-    // let history = useHistory();
     return ( 
         <div>
             <section> 
@@ -25,6 +24,7 @@ export default function Dashboard() {
                 <div>carousell</div>
             </section>
             <Jobs/>
+            <Join/>
             <Insight/>
         </div>
     );
