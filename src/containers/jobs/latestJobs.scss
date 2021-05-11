@@ -9,4 +9,50 @@
 }
 .jobList {
     display: inline-flex;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    @media only screen and (min-width: 900px) {
+        flex-direction: row;
+    }
+}
+.jobBox {
+    // padding: 1rem;
+    margin: 5px 0;
+    background-color: orange;
+    color: #FFFFFF;
+    @media only screen and (min-width: 900px) {
+        cursor: pointer;
+        margin: 0 5px;
+    }
+}
+.jobCol {
+    padding: 1rem;
+}
+.jobBox:hover {
+    background-color: #ebebeb;
+    color: black;
+}
+.header1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.jobBox + .header1:hover {
+    color: orange;
+}
+.btnApply {
+    display: flex;
+    justify-content: flex-end;
+    // background-color: orange;
+}
+.btnText {
+    width: 100px;
+    background-color: #FAFAFA;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+.jobBox + .btnText:hover {
+    background-color: orange;
+    color: #FAFAFA;
 }
