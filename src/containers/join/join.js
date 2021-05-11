@@ -13,7 +13,7 @@ export default function Join() {
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                     </p>
                     <div className="d-flex justify-content-center">
-                        <div className="btnMore">learn More</div>
+                        <div className="btnMore">learn more</div>
                     </div>
                 </div>
                 <div className="workPic"></div>

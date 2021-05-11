@@ -1,8 +1,22 @@
 .dashboardTitle {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    @media only screen and (min-width: 900px) {
+        justify-content: center;
+    }
+}
+.iptText {
+    margin: 10px 0;
+    @media only screen and (min-width: 900px) {
+        margin: 0 10px;
+    }
 }
 .searchJob {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    @media only screen and (min-width: 900px) {
+        justify-content: center;
+        flex-direction: row;
+    }
 }

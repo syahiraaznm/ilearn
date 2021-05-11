@@ -1,6 +1,7 @@
 .insightContainer {
     display: flex;
     flex-direction: column;
+    padding: 1rem 0;
 }
 .insightTitle {
     display: flex;
@@ -18,9 +19,10 @@
 .listBox {
     border: 1px solid red;
     background-size: cover;
-    height: 200px;
-    width: 285px;
-    margin: 10px 0;
+    height: 50vh;
+    width: 90vw;
+    background-position: center center;
+    margin: 10px;
     @media only screen and (min-width: 1180px) {
         margin: 20px 10px;
         height: 250px;

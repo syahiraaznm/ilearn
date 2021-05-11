@@ -4,6 +4,7 @@ import Jobs from '../jobs/latestJobs';
 import Insight from '../insight/insight';
 import Join from '../join/join';
 import Testimonial from '../testimonial/feedback';
+import About from '../aboutUs/aboutUs';
 
 export default function Dashboard() {
     return ( 
@@ -13,9 +14,11 @@ export default function Dashboard() {
                 <h1 className="dashboardTitle">quae ab illo</h1>
                 <div className="searchJob">
                     <input
+                        className="iptText"
                         placeholder="keyword"
                     />
                     <input
+                        className="iptText"
                         placeholder="location"
                     />
                     <div>Search Jobs</div>
@@ -25,6 +28,7 @@ export default function Dashboard() {
                 <div>carousell</div>
             </section>
             <Jobs/>
+            <About/>
             <Testimonial/>
             <Join/>
             <Insight/>
