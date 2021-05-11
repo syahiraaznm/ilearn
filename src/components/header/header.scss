@@ -1,10 +1,31 @@
+.rootBox {
+    height: 100vh; 
+    overflow-y: scroll;
+    @media only screen and (min-width: 949px) {
+       padding-top: 250px; 
+    }
+}
 .headerContainer {
-    display: flex;
-    background-color: grey;
-    padding: 0 3%;
-    position: fixed;
-    z-index: 1;
     width: -webkit-fill-available;
+    background-image: url("../../assets/image/dashboard.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-bottom: 2rem;
+    filter: brightness(0.8);
+    // padding: 0 3%;
+    @media only screen and (min-width: 949px) {
+        position: fixed;
+        z-index: 1;
+    }
+}
+.headerBox {
+    display: flex;
+    // background-color: grey;
+    padding: 0 3%;
+    // position: fixed;
+    // z-index: 1;
+    // width: -webkit-fill-available;
 }
 .home {
     cursor:pointer;
@@ -13,6 +34,9 @@
     display: flex;
     // justify-content: center;
     align-items: center;
+    font-size: 25px;
+    color: orange;
+    font-weight: bold;
 }
 .tabs {
     display: none;
@@ -40,20 +64,7 @@
     width: 20%;
     justify-content: space-around;
 }
-.authBtn {
-    background-color: #FAFAFA;
-    border-radius: 5px;
-    margin: 5px;
-    width: 80px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    cursor: pointer;
-}
-.authBtn:hover {
-    background-color: orange;
-    color: #FAFAFA;
-}
+
 .sideBarMobile {
     display: flex;
     justify-content: flex-end;

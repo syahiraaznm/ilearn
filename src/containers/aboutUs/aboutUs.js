@@ -1,12 +1,13 @@
 import React from 'react';
 import './aboutUs.scss';
-import Receipient from '../../assets/image/feedback.svg';
+import Title from "../../components/sectionTitle/title";
+import Button from "../../components/button/button";
 
 export default function AboutUs() {
     return (
         <section >
             <div className="aboutContainer">
-                <div className="aboutTitle">About Us</div>
+                <Title title="About Us" style={"color: #FFFFFFF"}/>
                 <div className="aboutBox">
                     <p style={{textAlign: "center"}}>
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -41,9 +42,7 @@ export default function AboutUs() {
                             </div>
                         </div>
                     </div>
-                    <div className="d-flex justify-content-center">
-                        <div className="btnMore">read more</div>
-                    </div>
+                    <Button btnBox="boxCenter" btnName="read more" btnClass="btnMore" btnClass2="extraBtn"/>
                 </div>
 
             </div>

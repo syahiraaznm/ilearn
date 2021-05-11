@@ -1,66 +1,29 @@
 import React from 'react';
 import './latestJobs.scss';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import CarouselWeb from "../../components/carousel/jobCarouselWeb";
+import CarouselMobile from "../../components/carousel/jobCarouselMobile";
+import Title from "../../components/sectionTitle/title";
 
 export default function LatestJobs() {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      };
     return (
         <section className="jobContainer">
-            <div className="jobTitle">Latest Jobs</div>
+            <Title title="Latest Jobs" style={"color: black"}/>
             <div className="jobList">
-                <div className="jobBox">
-                    <div className="jobCol">
-                        <div className="header1">Duis aute irure dolor in reprehenderit</div>
-                        <div>$20000 - $30000 | LONDON </div>
-                        <p>
-                            Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamoo laboris nisi ut aliquip ex
-                            ea commodo consequat
-                        </p>
-                    </div>
-                    <div className="btnApply">
-                        <div className="btnText">APPLY</div>
-                    </div>
+                <div className="whichCarouselWeb">
+                    <CarouselWeb/>
                 </div>
-                <div className="jobBox">
-                    <div className="jobCol">
-                        <div className="header1">Duis aute irure dolor in reprehenderit</div>
-                        <div>$20000 - $30000 | LONDON </div>
-                        <p>
-                            Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamoo laboris nisi ut aliquip ex
-                            ea commodo consequat
-                        </p>
-                    </div>
-                    <div className="btnApply">
-                        <div className="btnText">APPLY</div>
-                    </div>
-                </div>
-                <div className="jobBox">
-                    <div className="jobCol">
-                        <div className="header1">Duis aute irure dolor in reprehenderit</div>
-                        <div>$20000 - $30000 | LONDON </div>
-                        <p>
-                            Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamoo laboris nisi ut aliquip ex
-                            ea commodo consequat
-                        </p>
-                    </div>
-                    <div className="btnApply">
-                        <div className="btnText">APPLY</div>
-                    </div>
-                </div>
-                <div className="jobBox">
-                    <div className="jobCol">
-                        <div className="header1">Duis aute irure dolor in reprehenderit</div>
-                        <div>$20000 - $30000 | LONDON </div>
-                        <p>
-                            Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamoo laboris nisi ut aliquip ex
-                            ea commodo consequat
-                        </p>
-                    </div>
-                    <div className="btnApply">
-                        <div className="btnText">APPLY</div>
-                    </div>
+                <div className="whichCarouselMobile">
+                    <CarouselMobile/>
                 </div>
             </div>
         </section>

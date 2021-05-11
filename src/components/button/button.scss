@@ -1,0 +1,36 @@
+.boxAuth {
+    display: flex;
+    width: 20%;
+}
+.extraBtn {
+    display: none;
+}
+.boxCenter {
+    display: flex;
+    justify-content: center;
+}
+.btnMore {
+    padding: 10px;
+    background-color: #FAFAFA;
+    color: black;
+    width: 120px;
+    border-radius: 10px;
+    text-align: center;
+}
+.btnMore:hover {
+    box-shadow: 0 8px 6px -6px black;
+}
+.authBtn {
+    background-color: #FAFAFA;
+    // border-radius: 5px;
+    // margin: 5px;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+.authBtn:hover {
+    background-color: orange;
+    color: #FAFAFA;
+}

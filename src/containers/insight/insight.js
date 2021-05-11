@@ -1,10 +1,11 @@
 import React from 'react';
 import './insight.scss';
+import Title from "../../components/sectionTitle/title";
 
 export default function Insight() {
     return (
         <section className="insightContainer">
-            <div className="insightTitle">Latest Insight</div>
+            <Title title="Latest Insight" style={"color: black"}/>
             <div className="insightList">
                     <div className="listBox" id="pic1">
                         <div className="description">

@@ -3,12 +3,9 @@
     flex-direction: column;
     padding: 1rem 0;
 }
-.insightTitle {
-    display: flex;
-    justify-content: center;
-}
+
 .insightList {
-    border: 1px solid blue;
+    // border: 1px solid blue;
     display: grid;
     grid-template-rows: auto auto auto auto;
     justify-content: center;
@@ -17,7 +14,7 @@
     }
 }
 .listBox {
-    border: 1px solid red;
+    // border: 1px solid red;
     background-size: cover;
     height: 50vh;
     width: 90vw;

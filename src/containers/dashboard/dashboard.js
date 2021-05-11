@@ -5,11 +5,12 @@ import Insight from '../insight/insight';
 import Join from '../join/join';
 import Testimonial from '../testimonial/feedback';
 import About from '../aboutUs/aboutUs';
+import Carousel from '../../components/carousel/carousel';
 
 export default function Dashboard() {
     return ( 
         <div>
-            <section> 
+            {/* <section className="dashboardContainer"> 
                 <h1 className="dashboardTitle">Aqccusantium doloremque</h1>
                 <h1 className="dashboardTitle">quae ab illo</h1>
                 <div className="searchJob">
@@ -21,12 +22,12 @@ export default function Dashboard() {
                         className="iptText"
                         placeholder="location"
                     />
-                    <div>Search Jobs</div>
+                    <div className="btnSearch">Search Jobs</div>
                 </div>
-            </section>
-            <section>
-                <div>carousell</div>
-            </section>
+                <section>
+                    <Carousel/>
+                </section>
+            </section> */}
             <Jobs/>
             <About/>
             <Testimonial/>

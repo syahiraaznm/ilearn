@@ -7,12 +7,9 @@
     background-position: center center;
     background-repeat: no-repeat;
     color: #FAFAFA;
-    filter: grayscale(0.8)
+    filter: brightness(0.8);
 }
-.aboutTitle {
-    display: flex;
-    justify-content: center;
-}
+
 .aboutBox {
     display: flex;
     flex-direction: column;
@@ -25,17 +22,6 @@
     @media only screen and (min-width: 900px) {
         grid-template-columns: auto auto auto;
     }
-}
-.btnMore {
-    padding: 10px;
-    background-color: #FAFAFA;
-    color: black;
-    width: 120px;
-    border-radius: 10px;
-    text-align: center;
-}
-.btnMore:hover {
-    box-shadow: 0 8px 6px -6px black;
 }
 .countBox {
     margin: 0 2rem;

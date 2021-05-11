@@ -1,11 +1,12 @@
 import React from 'react';
 import './feedback.scss';
 import Receipient from '../../assets/image/feedback.svg';
+import Title from "../../components/sectionTitle/title";
 
 export default function Feedback() {
     return (
         <section className="feedbackContainer">
-            <div className="feedTitle">Testimonials</div>
+            <Title title="Testimonials" style={"color: black"}/>
             <div className="feedBox">
                 <p style={{textAlign: "center"}}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br/>

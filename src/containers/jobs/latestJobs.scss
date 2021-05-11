@@ -3,10 +3,7 @@
     flex-direction: column;
     // justify-content: center;
 }
-.jobTitle {
-    display: flex;
-    justify-content: center;
-}
+
 .jobList {
     display: inline-flex;
     margin-bottom: 2rem;
@@ -55,4 +52,20 @@
     color: black;
     padding: 10px;
     text-align: center;
+}
+.whichCarouselWeb {
+    display: none;
+    @media only screen and (min-width: 900px) {
+        display: block;
+        width: -webkit-fill-available;
+        margin-top: 1rem;
+    }
+}
+.whichCarouselMobile {
+    display: block;
+    width: -webkit-fill-available;
+    margin-top: 1rem;
+    @media only screen and (min-width: 900px) {
+        display: none;
+    }
 }
