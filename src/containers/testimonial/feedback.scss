@@ -1,0 +1,22 @@
+.feedbackContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.feedTitle {
+    display: flex;
+    justify-content: center;
+}
+.feedBox {
+    display: flex;
+    flex-direction: column;
+}
+.colReceipient {
+    display: flex;
+    justify-content: center;
+}
+.receipient {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

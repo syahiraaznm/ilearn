@@ -3,6 +3,7 @@ import './dashboard.scss';
 import Jobs from '../jobs/latestJobs';
 import Insight from '../insight/insight';
 import Join from '../join/join';
+import Testimonial from '../testimonial/feedback';
 
 export default function Dashboard() {
     return ( 
@@ -24,6 +25,7 @@ export default function Dashboard() {
                 <div>carousell</div>
             </section>
             <Jobs/>
+            <Testimonial/>
             <Join/>
             <Insight/>
         </div>
