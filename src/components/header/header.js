@@ -102,18 +102,21 @@ export default function Header() {
                 )}
             </div>
             <section> 
-                <h1 className="dashboardTitle">Aqccusantium doloremque</h1>
-                <h1 className="dashboardTitle">quae ab illo</h1>
-                <div className="searchJob">
-                    <input
-                        className="iptText"
-                        placeholder="keyword"
-                    />
-                    <input
-                        className="iptText"
-                        placeholder="location"
-                    />
-                    <div className="btnSearch">Search Jobs</div>
+                <div style={{padding: "3rem 0"}}>
+                    <h1 className="dashboardTitle">Aqccusantium doloremque</h1>
+                    <h1 className="dashboardTitle">quae ab illo</h1>
+                    <div className="searchJob">
+                        <input
+                            className="iptText"
+                            placeholder="keyword"
+                        />
+                        <input
+                            className="iptText"
+                            placeholder="location"
+                        />
+                        <div className="btnSearch">Search Jobs</div>
+                    </div>
+
                 </div>
                 <section>
                     <Carousel/>
