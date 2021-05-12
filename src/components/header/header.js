@@ -54,18 +54,39 @@ export default function Header() {
                     <img src={nav} alt="navigation bar" width="30px"/>
                 </div>
                 {sideBarCollapse === true && (
-                        <div className="sideBarBox"> 
+                    <div className="sideBarBox"> 
                         <div className="sideBarCollapsed" onClick={sideBar}>
                             <img src={nav} alt="navigation bar" width="30px"/> 
                         </div>
                         <div className= "sideHeader">
-                            <span className="sideText">Jobs</span>
-                            <span className="sideText">About</span>
-                            <span className="sideText">Candidates</span>
-                            <span className="sideText">Clients</span>
-                            <span className="sideText">Join Us</span>
-                            <span className="sideText">Insights</span>
-                            <span className="sideText">Contact Us</span>
+                            <span className="sideText" onClick={()=> {
+                                closeSideBar();
+                                history.push("/");
+                            }}>Jobs</span>
+                            <span className="sideText" onClick={()=> {
+                                closeSideBar();
+                                history.push("/");
+                            }}>About</span>
+                            <span className="sideText" onClick={()=> {
+                                closeSideBar();
+                                history.push("/");
+                            }}>Candidates</span>
+                            <span className="sideText" onClick={()=> {
+                                closeSideBar();
+                                history.push("/");
+                            }}>Clients</span>
+                            <span className="sideText" onClick={()=> {
+                                closeSideBar();
+                                history.push("/");
+                            }}>Join Us</span>
+                            <span className="sideText" onClick={()=> {
+                                closeSideBar();
+                                history.push("/");
+                            }}>Insights</span>
+                            <span className="sideText" onClick={()=> {
+                                closeSideBar();
+                                history.push("/");
+                            }}>Contact Us</span>
                             <span className="sideText" onClick={()=> {
                                 closeSideBar();
                                 history.push("/login");

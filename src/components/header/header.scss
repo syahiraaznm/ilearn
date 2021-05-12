@@ -1,8 +1,8 @@
 .rootBox {
-    height: 100vh; 
+    // height: 100vh; 
     overflow-y: scroll;
     @media only screen and (min-width: 949px) {
-       padding-top: 250px; 
+    //    padding-top: 250px; 
     }
 }
 .headerContainer {
@@ -15,8 +15,8 @@
     filter: brightness(0.8);
     // padding: 0 3%;
     @media only screen and (min-width: 949px) {
-        position: fixed;
-        z-index: 1;
+        // position: fixed;
+        // z-index: 1;
     }
 }
 .headerBox {
@@ -84,7 +84,7 @@
     height: 100%;
     // border: 1px solid orange;
     width: 270px;
-    // transition: 2s;
+    transition: 4s;
     @media only screen and (min-width: 950px) {
         display: none;
     }

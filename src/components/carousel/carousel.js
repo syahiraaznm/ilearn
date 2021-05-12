@@ -13,7 +13,7 @@ export default function Carousel() {
         slidesToScroll: 1
       };
     return ( 
-        <div style={{padding: " 1rem 8rem 0", backgroundColor: "rgba(53,60,60, 0.42)", marginTop: "1rem"}}> 
+        <div className="carouselContainer"> 
             <Slider {...settings}>
                 <div className="carouselBox">
                     {/* <span>O</span> */}
