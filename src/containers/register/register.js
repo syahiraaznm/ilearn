@@ -7,7 +7,6 @@ import validate from "./validate";
         
         const { handleInputChange, userInput, handleRegister, errors } = useForm(submitForm, validate);
     return ( 
-        <div style ={{height: "100vh", display:"flex", flexDirection: "column", justifyContent: "center", margin: "auto", alignItems: "center"}}>
             <div style= {{border: "1px solid pink", alignItems: "center", display:"flex", flexDirection: "column"}}>
                 <span>Register</span>
                 <form onSubmit={handleRegister} style= {{display: "flex", flexDirection: "column"}}>
@@ -61,7 +60,6 @@ import validate from "./validate";
                     </button>
                 </form>
             </div>
-        </div>
     );
 }
 export default Register;

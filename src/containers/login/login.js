@@ -7,7 +7,6 @@ import validate from "./validate";
     const Login = ({submitForm}) => {
     const {handleInputChange, userInput, handleLogIn, errors} = useForm(submitForm, validate);
     return ( 
-        <div className="loginnn" style ={{height: "100vh", display:"flex", flexDirection: "column", justifyContent: "center", margin: "auto", alignItems: "center"}}>
             <div style= {{border: "1px solid pink", alignItems: "center", display:"flex", flexDirection: "column"}}>
                 <span>Login</span>
                 <form onSubmit={handleLogIn} style= {{display: "flex", flexDirection: "column"}} noValidate>
@@ -44,7 +43,6 @@ import validate from "./validate";
                     </button>
                 </form>
             </div>
-        </div>
     );
 }
 

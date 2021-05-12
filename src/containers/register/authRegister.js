@@ -11,7 +11,7 @@ const AuthRegister = () => {
   }
   return (
     <>
-      <div className='form-container'>
+      <div>
         {!isSubmitted ? (
           <Register submitForm={submitForm} />
         ) : (

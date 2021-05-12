@@ -11,7 +11,7 @@ const AuthLogin = () => {
   }
   return (
     <>
-      <div className='form-container'>
+      <div>
         {!isSubmitted ? (
           <Login submitForm={submitForm} />
         ) : (
